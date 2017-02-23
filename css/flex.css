@@ -1,0 +1,202 @@
+/* 
+COLORS
+
+dark gray #3E3C3F
+light gray #767676
+
+dark purple #AE7FD1
+light purple #D7B5F0
+extra light purple #e8dcf2
+*/
+/*shorthand flex: none | [ <'flex-grow'> <'flex-shrink'> | <'flex-basis'> ]*/
+
+*
+{
+    box-sizing: border-box;
+}
+
+/*FONTS*/
+
+html
+{
+    font-size: 100%;
+}
+
+@font-face
+{
+    font-family: 'roboto_condensedbold';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('../fonts/roboto_condensed/roboto-condensed.bold-webfont.woff2') format('woff2'),
+    url('../fonts/roboto_condensed/roboto-condensed.bold-webfont.woff') format('woff');
+}
+
+.ff-bold
+{
+    font-family: 'roboto_condensedbold', Impact, Verdana, sans-serif;
+
+    color: #3e3c3f;
+}
+
+@font-face
+{
+    font-family: 'open_sansregular';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('../fonts/open_sans/opensans-regular-webfont.woff2') format('woff2'),
+    url('../fonts/open_sans/opensans-regular-webfont.woff') format('woff');
+}
+
+.ff-regular
+{
+    font-family: 'open_sansregular', Arial, sans-serif;
+
+    color: #3e3c3f;
+}
+
+
+/*HEADER*/
+
+header
+{
+    display: flex;
+
+    padding: .5rem 1rem;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand
+{
+    width: 35%;
+}
+
+nav
+{
+    display: flex;
+
+    flex-flow: column;
+}
+
+.nav
+{
+    display: flex;
+
+    margin: 4px 0;
+    padding: 0;
+
+    list-style: none;
+
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+}
+
+.nav a
+{
+    font-variant: small-caps;
+
+    padding: .5rem;
+
+    text-decoration: none;
+}
+
+.un-active
+{
+    color: #3e3c3f;
+}
+
+.current-page
+{
+    color: #ae7fd1;
+}
+
+nav ul li a:hover
+{
+    color: #767676;
+}
+
+/*WORK*/
+
+.featured-work
+{
+    display: flex;
+
+    padding: 1rem 0;
+
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+picture
+{
+    padding: 1.5rem 0;
+}
+
+
+/*FOOTER*/
+
+footer
+{
+    display: flex;
+
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+/*MEDIA QUERIES*/
+
+@media all and (min-width: 28.06rem)
+{
+    .nav
+    {
+        font-size: 1.5rem;
+    }
+
+    footer img
+    {
+        width: 3.5rem;
+        height: 3.5rem;
+        margin: 0 .5rem;
+    }
+}
+
+@media all and (min-width: 37.44rem)
+{
+    .brand
+    {
+        width: 30%;
+    }
+
+    .nav
+    {
+        font-size: 2rem;
+    }
+
+    .featured-work
+    {
+        flex-flow: row wrap;
+    }
+
+    picture
+    {
+        padding: 1rem 0;
+    }
+}
+
+@media all and (min-width: 59.94rem)
+{
+    .brand
+    {
+        width: 20%;
+    }
+    
+    footer img
+    {
+        width: 3rem;
+        height: 3rem;
+    }
+}
