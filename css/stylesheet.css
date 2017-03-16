@@ -1,0 +1,294 @@
+* { box-sizing: border-box; }
+
+
+html { font-size: 100%; }
+
+@font-face {
+    font-family: 'roboto_condensedbold';
+    src: url('../fonts/roboto_condensed/roboto-condensed.bold-webfont.woff2') format('woff2'),
+         url('../fonts/roboto_condensed/roboto-condensed.bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.ff-bold {
+	font-family: 'roboto_condensedbold', Impact, Verdana, sans-serif;
+}
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/open_sans/opensans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/open_sans/opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.ff-regular {
+	font-family: 'open_sansregular', Arial, sans-serif;
+}
+
+.container {
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+.header-home, .header {
+	display: flex;
+	flex-flow: row nowrap;
+	margin-right: 1rem;
+}
+
+.header {
+	justify-content: space-between;
+	margin-top: 1rem;
+}
+
+.header-home {
+	justify-content: flex-end;
+}
+
+main {
+	margin-bottom: 2rem;
+}
+
+main, figure {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+}
+
+.logo {
+	font-variant: small-caps;
+	font-size: 1.5rem;
+	margin-left: 1rem;
+}
+
+.logo a {
+	text-decoration: none;
+	color: #6d6d6d;
+}
+
+.nav-home {
+	position: absolute;
+}
+
+.nav ul {
+	margin: 0;
+}
+
+.nav-home li, .nav li {
+	list-style: none;
+	font-variant: small-caps;
+	display: inline;
+	font-size: 1.5rem;
+	padding: 5px;
+}
+
+.nav-home li a, .nav li a {
+	text-decoration: none;
+	color: #6d6d6d;
+}
+
+.home {
+	font-variant: small-caps;
+	font-size: 4rem;
+	position: absolute;
+	line-height: 31.25rem;
+	margin: 0;
+}
+
+.home a {
+	text-decoration: none;
+	color: white;
+}
+
+.slides {
+	margin: 0;
+}
+
+.slides figcaption {
+	font-variant: small-caps;
+	font-size: 1.5rem;
+	text-align: center;
+	position: relative;
+}
+
+.slides figcaption a {
+	text-decoration: none;
+	color: #a9a9a9;
+}
+
+.slides figcaption:hover {
+	text-decoration: underline;
+	color: #6d6d6d;
+}
+.slides img {
+	height: 31.25rem;
+}
+
+.dot {
+	cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+ }
+
+ .active, .dot:hover {
+  background-color: #717171;
+}
+
+.featured-work, .featured-work img {
+	margin-top: 1rem;
+}
+
+.featured-work {
+	display: flex;
+	flex-flow: column wrap; 
+	justify-content: space-around;
+}
+
+video {
+	width: 100%;
+	height: 100%;
+	padding-top: 1rem;
+}
+
+.contact {
+  text-align: left;
+  padding: 0 1rem;
+  margin-top: 1.5rem;
+}
+
+.contact p {
+  margin-top: 0;
+  margin-bottom: .5rem;
+}
+
+.email {
+  font-weight: 600;
+}
+
+.email a:link {
+  color: #AE7FD1; 
+  text-decoration: none;
+}
+
+.email a:hover {
+  color: #D7B5F0;
+}
+
+form {
+  background-color: #ededed;
+}
+
+fieldset {
+  border: 0;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  margin: 0 auto;
+}
+
+label {
+  color: #3E3C3F;
+  display: block;
+  line-height: 0;
+  font-variant: small-caps;
+  font-weight: 600;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 5px 1rem;
+  margin-bottom: 2rem;
+  color: #3E3C3F;
+  border: 2px solid #3E3C3F;
+  border-radius: 2px;
+}
+
+textarea:focus, input[type=text]:focus {
+  outline: none;
+  border: 3px solid #D7B5F0;
+}
+
+textarea {
+  width: 100%;
+  height: 10rem;
+  padding: 5px 1rem;
+  color: #3E3C3F;
+  border: 2px solid #3E3C3F;
+  border-radius: 2px;
+  resize: none;
+}
+
+input[type=submit] {
+  background-color: #AE7FD1;
+  border: none;
+  color: white;
+  padding: 4px 1rem 6px;
+  width: 100%;
+  text-decoration: none;
+  font-variant: small-caps;
+  font-weight: 600;
+  margin: 1rem 0 0;
+  border-radius: 2px;
+  display: block;
+  outline: none;
+}
+
+input[type=submit]:hover {
+  background-color: #D7B5F0;
+}
+
+.about {
+  padding: 1rem 1.5rem;
+}
+
+.about-text {
+  line-height: 2rem;
+}
+
+.intro, .resume {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+footer {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	background-color: #6d6d6d;
+	height: 6.25rem;
+	width: 100%;
+}
+
+footer p {
+	color: white;
+	position: absolute;
+}
+
+footer img {
+	width: 100%;
+	height: 6.25rem;
+	opacity: .5;
+}
+
+@media all and (min-width: 37.44rem) { 
+	.featured-work {
+		flex-flow: row wrap;
+	}
+
+	video {
+		width: 45%;
+	}
+}
+
+	@media all and (min-width: 59.94rem) {
+		video {
+			width: 30%;
+		}
+	}
