@@ -1,0 +1,188 @@
+* { box-sizing: border-box; }
+
+/*FONTS*/
+
+html { font-size: 100%; }
+
+@font-face {
+    font-family: 'roboto_condensedbold';
+    src: url('../fonts/roboto_condensed/roboto-condensed.bold-webfont.woff2') format('woff2'),
+         url('../fonts/roboto_condensed/roboto-condensed.bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.ff-bold {
+	font-family: 'roboto_condensedbold', Impact, Verdana, sans-serif;
+}
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/open_sans/opensans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/open_sans/opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.ff-regular {
+	font-family: 'open_sansregular', Arial, sans-serif;
+  color:  #3E3C3F;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1400px;
+  width: 100%;
+}
+
+img { max-width: 100%; 
+}
+/*HEADER*/
+
+.brand.col {
+    float: left;
+    width: 35%;
+    margin-left: 1rem;
+  }
+
+header, footer {
+  width: 100%;
+  overflow: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+footer {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+/*HEADER*/
+.home-text {
+  background-color: #AE7FD1;
+  width: 100%;
+  font-size: 7rem;
+  font-weight: 600;
+  text-align: center;
+  line-height: 800px;
+  height: 800px;
+}
+
+.home-text a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar.home {
+  position: absolute;
+}
+
+main.home {
+  margin-top: 0;
+}
+
+@media (min-width: 6.25rem) {
+
+  
+
+  .menu.col {
+    display: none;
+  }
+
+  .portfolio .row {
+  height: 450px;
+}
+
+.portfolio .row .col {
+  float: left;
+  width: 100%;
+}
+
+.portfolio figure {
+  margin: 1rem 0;
+  width: 100%;
+  padding-bottom: 1rem;
+  background-color: #AE7FD1;
+  height: 12.5rem;
+}
+
+.portfolio figcaption {
+  text-align: center;
+}
+.portfolio figcaption a {
+  color: white;
+  font-size: 3rem;
+  font-weight: 600;
+  font-variant: small-caps;
+  text-decoration: none; 
+  height: 12.5rem;
+  line-height: 12.5rem;
+}
+
+
+}
+
+@media (min-width: 25rem) {
+
+  .portfolio figure {
+    height: 15.25rem; 
+  }
+.portfolio figcaption a {
+  font-size: 4rem;
+    height: 15.25rem;
+  line-height: 15.25rem;
+}
+}
+
+@media (min-width: 31.25rem) {
+  .portfolio figure {
+    height: 18.25rem;
+  }
+   .portfolio figcaption a{
+    font-size: 6rem;
+      height: 18.25rem;
+  line-height: 18.25rem;
+  }
+}
+
+@media (min-width: 46.56rem) {
+  /* 745px*/
+.portfolio figure {
+  height: 400px;
+}
+  
+  .portfolio .row .col.left {
+    float: left;
+    width: 50%;
+    padding: 0 1rem 0 2rem;
+  }
+  .portfolio .row .col.right {
+    float: right;
+    width: 50%;
+    padding: 0 2rem 0 1rem;
+  }
+  .portfolio figcaption a{
+    font-size: 4rem;
+      height: 400px;
+  line-height: 400px;
+  }
+}
+
+@media (min-width: 59.06rem) {
+  /*945px*/
+  .portfolio figure {
+  height: 500px;
+}
+  .portfolio figcaption a{
+    font-size: 5rem;
+      height: 500px;
+  line-height: 500px;
+}
+ 
+}
+
+
+
+@media (min-width: 64rem) {
+
+}
