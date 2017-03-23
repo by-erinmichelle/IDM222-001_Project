@@ -582,7 +582,9 @@ textarea:focus
 {
     text-decoration: none;
 
+    font-weight: 600;
     color: #353535;
+    cursor: pointer;
 }
 
 /*FOOTER*/
@@ -1379,6 +1381,25 @@ footer p
 
 @media all and (min-width: 2300px)
 {
+    .about
+    {
+        font-size: 2.5rem;
+    }
+    .intro
+    {
+        font-size: 6.5rem;
+        line-height: 12.5rem;
+    }
+    .p-first
+    {
+        margin-top: 12.5rem;
+    }
+    .p-left,
+    .p-right
+    {
+        margin-bottom: 7rem;
+        padding: 5rem 7rem;
+    }
     .subnav-portfolio li
     {
         font-size: 4rem;
@@ -1472,7 +1493,7 @@ footer p
     .p-right
     {
         margin-bottom: 10rem;
-        padding: 7rem;
+        padding: 5rem 9rem;
     }
     .p-left
     {
