@@ -16,18 +16,42 @@
 		<header class="header">
 
 			<div class="logo ff-bold"><a href="index-final.html">erin michelle</a></div>
-			<div class="nav ff-bold">
-					<ul>
-						<li><a href="about-final.html">about</a></li>
-						<li><a href="portfolio-grid.html">portfolio</a></li>
-						<li><a href="contact-final.html">contact</a></li>
-					</ul>
-				</div>
+
+			<img id="hamburger" src="../graphics/hamburger.png" alt="menu">	
 
 		</header>
 
 		<main>
+
+			<div class="subnav-large ff-bold"> 
+				<ul>
+					<li><a href="graphic-final.html">graphic</a></li>
+					<li><a href="web-final.html">web</a></li>
+					<li><a href="photography-final.html">photography</a></li>
+					<li><a href="art-final.html">art</a></li>
+				</ul>
+			</div>
+							
+				<div id="nav-list" class="visually-hidden nav ff-bold">
+					<ul>
+						<li class="unactive"><a href="about-final.html">about</a></li>
+						<li class="current-page"><a class="portfolio" href="portfolio-grid.html">portfolio</a>
+								<div class="subnav"> 
+									<ul>
+										<li><a href="graphic-final.html">graphic</a></li>
+										<li><a href="web-final.html">web</a></li>
+										<li><a href="photography-final.html">photography</a></li>
+										<li><a href="art-final.html">art</a></li>
+									</ul>
+							</div>
+						</li>
+						<li class="unactive"><a href="contact-final.html">contact</a></li>
+					</ul>
+				</div>
+
 			<div class="featured-work">
+
+			<div class="featured-work-content">
 
 			<picture>
 			<!--sizes: how many pixels the browser needs
@@ -55,6 +79,46 @@
 
 			<picture>
 
+				<source srcset="../photography/portrait07-500.jpg 500w,
+				../photography/portrait07-640.jpg 640w,
+				../photography/portrait07-900.jpg 900w"
+	              sizes="(min-width: 59.94rem) 30vw,
+	              (min-width: 37.44rem) 45vw"
+	              type="image/jpg">
+				<img srcset="../photography/portrait07-160.jpg 160w,
+				../photography/portrait07-320.jpg 320w,
+				../photography/portrait07-500.jpg 500w, 
+				../photography/portrait07-640.jpg 640w,
+				../photography/portrait07-900.jpg 900w"
+	           sizes="(min-width: 59.94rem) 30vw, 
+	           (min-width: 37.44rem) 45vw"
+	           src="../photography/portrait07-160.jpg" 
+	           alt="portrait">
+			
+			</picture>	
+
+			<picture>
+
+			<source srcset="../photography/moment01-500.jpg 500w,
+				../photography/moment01-640.jpg 640w,
+				../photography/moment01-900.jpg 900w"
+	              sizes="(min-width: 59.94rem) 30vw,
+	              (min-width: 37.44rem) 45vw"
+	              type="image/jpg">
+				<img srcset="../photography/moment01-160.jpg 160w,
+				../photography/moment01-320.jpg 320w,
+				../photography/moment01-500.jpg 500w, 
+				../photography/moment01-640.jpg 640w,
+				../photography/moment01-900.jpg 900w"
+	           sizes="(min-width: 59.94rem) 30vw, 
+	           (min-width: 37.44rem) 45vw"
+	           src="../photography/moment01-160.jpg" 
+	           alt="moment">
+	
+			</picture>	
+
+			<picture>
+
 				<source srcset="../photography/architecture05-500.jpg 500w,
 				../photography/architecture05-640.jpg 640w,
 				../photography/architecture05-900.jpg 900w"
@@ -71,65 +135,25 @@
 	           src="../photography/architecture05-160.jpg" 
 	           alt="architecture">
 			
-			</picture>	
-
-			<picture>
-
-				<source srcset="../photography/architecture07-500.jpg 500w,
-				../photography/architecture07-640.jpg 640w,
-				../photography/architecture07-900.jpg 900w"
-	              sizes="(min-width: 59.94rem) 30vw,
-	              (min-width: 37.44rem) 45vw"
-	              type="image/jpg">
-				<img srcset="../photography/architecture07-160.jpg 160w,
-				../photography/architecture07-320.jpg 320w,
-				../photography/architecture07-500.jpg 500w, 
-				../photography/architecture07-640.jpg 640w,
-				../photography/architecture07-900.jpg 900w"
-	           sizes="(min-width: 59.94rem) 30vw, 
-	           (min-width: 37.44rem) 45vw"
-	           src="../photography/architecture07-160.jpg" 
-	           alt="architecture">
-			
-			</picture>	
-
-			<picture>
-
-				<source srcset="../photography/architecture16-500.jpg 500w,
-				../photography/architecture16-640.jpg 640w,
-				../photography/architecture16-900.jpg 900w"
-	              sizes="(min-width: 59.94rem) 30vw,
-	              (min-width: 37.44rem) 45vw"
-	              type="image/jpg">
-				<img srcset="../photography/architecture16-160.jpg 160w,
-				../photography/architecture16-320.jpg 320w,
-				../photography/architecture16-500.jpg 500w, 
-				../photography/architecture16-640.jpg 640w,
-				../photography/architecture16-900.jpg 900w"
-	           sizes="(min-width: 59.94rem) 30vw, 
-	           (min-width: 37.44rem) 45vw"
-	           src="../photography/architecture16-160.jpg" 
-	           alt="architecture">
-			
 			</picture>				
 
 			<picture>
-
-				<source srcset="../photography/architecture18-500.jpg 500w,
-				../photography/architecture18-640.jpg 640w,
-				../photography/architecture18-900.jpg 900w"
+				
+				<source srcset="../photography/portrait04-500.jpg 500w,
+				../photography/portrait04-640.jpg 640w,
+				../photography/portrait04-900.jpg 900w"
 	              sizes="(min-width: 59.94rem) 30vw,
 	              (min-width: 37.44rem) 45vw"
 	              type="image/jpg">
-				<img srcset="../photography/architecture18-160.jpg 160w,
-				../photography/architecture18-320.jpg 320w,
-				../photography/architecture18-500.jpg 500w, 
-				../photography/architecture18-640.jpg 640w,
-				../photography/architecture18-900.jpg 900w"
+				<img srcset="../photography/portrait04-160.jpg 160w,
+				../photography/portrait04-320.jpg 320w,
+				../photography/portrait04-500.jpg 500w, 
+				../photography/portrait04-640.jpg 640w,
+				../photography/portrait04-900.jpg 900w"
 	           sizes="(min-width: 59.94rem) 30vw, 
 	           (min-width: 37.44rem) 45vw"
-	           src="../photography/architecture18-160.jpg" 
-	           alt="architecture">
+	           src="../photography/portrait04-160.jpg" 
+	           alt="portrait">
 			
 			</picture>	
 			
@@ -151,18 +175,84 @@
 	           src="../photography/architecture12-160.jpg" 
 	           alt="architecture">
 			
-			</picture>				
+			</picture>	
+
+			<picture>
+				
+				<source srcset="../photography/portrait05-500.jpg 500w,
+				../photography/portrait05-640.jpg 640w,
+				../photography/portrait05-900.jpg 900w"
+	              sizes="(min-width: 59.94rem) 30vw,
+	              (min-width: 37.44rem) 45vw"
+	              type="image/jpg">
+				<img srcset="../photography/portrait05-160.jpg 160w,
+				../photography/portrait05-320.jpg 320w,
+				../photography/portrait05-500.jpg 500w, 
+				../photography/portrait05-640.jpg 640w,
+				../photography/portrait05-900.jpg 900w"
+	           sizes="(min-width: 59.94rem) 30vw, 
+	           (min-width: 37.44rem) 45vw"
+	           src="../photography/portrait05-160.jpg" 
+	           alt="portrait">
+				
+	    </picture>       
+
+	    <picture>
+
+			<source srcset="../photography/moment02-500.jpg 500w,
+				../photography/moment02-640.jpg 640w,
+				../photography/moment02-900.jpg 900w"
+	              sizes="(min-width: 59.94rem) 30vw,
+	              (min-width: 37.44rem) 45vw"
+	              type="image/jpg">
+				<img srcset="../photography/moment02-160.jpg 160w,
+				../photography/moment02-320.jpg 320w,
+				../photography/moment02-500.jpg 500w, 
+				../photography/moment02-640.jpg 640w,
+				../photography/moment02-900.jpg 900w"
+	           sizes="(min-width: 59.94rem) 30vw, 
+	           (min-width: 37.44rem) 45vw"
+	           src="../photography/moment02-160.jpg" 
+	           alt="moment">
+
+	    </picture>       
+
+			</div>			
 						
 		</div><!--end featured work-->
 
 		</main>
 
 		<footer>
-			<p class="ff-regular">&copy; 2017 ERIN WIEGMAN</p>
-			<img class="footer-design" src="../graphics/footer-500.png" alt="footer design">
+
+			<div class="footer-info">
+				<div class="social">
+					<a href="https://www.facebook.com/erin.wiegman"><img src="../graphics/fb.png" alt="social"></a>
+					<a href="https://www.linkedin.com/in/erinwiegman/"><img src="../graphics/li.png" alt="social"></a>
+				</div>
+
+				<p class="ff-regular">&copy; 2017 ERIN WIEGMAN</p>
+			</div>
+
+			<picture class="footer-design">
+				<source media="(min-width: 450px)"
+								srcset="../graphics/footer-550.png 550w,
+								../graphics/footer-650.png 650w,
+								../graphics/footer-768.png 768w,
+								../graphics/footer-900.png 900w,
+								../graphics/footer-1500.png 1500w"
+								sizes="100vw">
+		    <img srcset="../graphics/footer-320.png 320w"
+		         sizes="100vw"
+		         src="../graphics/footer-320.png"
+		         alt="footer">
+			</picture>
+
 		</footer>
 
 	</div>
+
+	<script src="../js/main.js" type="text/javascript"></script>
 	
 </body>
 

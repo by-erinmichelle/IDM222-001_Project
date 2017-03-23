@@ -16,18 +16,42 @@
 		<header class="header">
 
 			<div class="logo ff-bold"><a href="index-final.html">erin michelle</a></div>
-			<div class="nav ff-bold">
-					<ul>
-						<li><a href="about-final.html">about</a></li>
-						<li><a href="portfolio-grid.html">portfolio</a></li>
-						<li><a href="contact-final.html">contact</a></li>
-					</ul>
-				</div>
+
+			<img id="hamburger" src="../graphics/hamburger.png" alt="menu">	
 
 		</header>
 
 		<main>
+
+			<div class="subnav-large ff-bold"> 
+				<ul>
+					<li><a href="graphic-final.html">graphic</a></li>
+					<li><a href="web-final.html">web</a></li>
+					<li><a href="photography-final.html">photography</a></li>
+					<li><a href="art-final.html">art</a></li>
+				</ul>
+			</div>
+							
+				<div id="nav-list" class="visually-hidden nav ff-bold">
+					<ul>
+						<li class="unactive"><a href="about-final.html">about</a></li>
+						<li class="current-page"><a class="portfolio" href="portfolio-grid.html">portfolio</a>
+								<div class="subnav"> 
+									<ul>
+										<li><a href="graphic-final.html">graphic</a></li>
+										<li><a href="web-final.html">web</a></li>
+										<li><a href="photography-final.html">photography</a></li>
+										<li><a href="art-final.html">art</a></li>
+									</ul>
+							</div>
+						</li>
+						<li class="unactive"><a href="contact-final.html">contact</a></li>
+					</ul>
+				</div>
+				
 			<div class="featured-work">
+
+			<div class="featured-work-content">
 
 			<picture>
 			<!--sizes: how many pixels the browser needs
@@ -153,6 +177,7 @@
 			
 			</picture>		
 
+
 			<picture>
 
 				<source srcset="../design/alienposter-500.jpg 500w,
@@ -191,18 +216,44 @@
 	           src="../design/sugarskull-160.jpg" 
 	           alt="sugarskull">
 			
-			</picture>								
+			</picture>
+
+			</div>				
 						
 		</div><!--end featured work-->
 
 		</main>
 
 		<footer>
-			<p class="ff-regular">&copy; 2017 ERIN WIEGMAN</p>
-			<img class="footer-design" src="../graphics/footer-500.png" alt="footer design">
+
+			<div class="footer-info">
+				<div class="social">
+					<a href="https://www.facebook.com/erin.wiegman"><img src="../graphics/fb.png" alt="social"></a>
+					<a href="https://www.linkedin.com/in/erinwiegman/"><img src="../graphics/li.png" alt="social"></a>
+				</div>
+
+				<p class="ff-regular">&copy; 2017 ERIN WIEGMAN</p>
+			</div>
+
+			<picture class="footer-design">
+				<source media="(min-width: 450px)"
+								srcset="../graphics/footer-550.png 550w,
+								../graphics/footer-650.png 650w,
+								../graphics/footer-768.png 768w,
+								../graphics/footer-900.png 900w,
+								../graphics/footer-1500.png 1500w"
+								sizes="100vw">
+		    <img srcset="../graphics/footer-320.png 320w"
+		         sizes="100vw"
+		         src="../graphics/footer-320.png"
+		         alt="footer">
+			</picture>
+
 		</footer>
 
 	</div>
+
+	<script src="../js/main.js" type="text/javascript"></script>
 	
 </body>
 
